@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Univer_Portas_NAND.bdf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Univer_Portas_NOR.bdf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Waveform.vwf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Waveform2.vwf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/projetos.bdf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Waveform3.vwf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/Block2.bdf
+source_file = 1, C:/Users/ACER/Desktop/aula3/Universalidades_Portas/db/projetos.cbx.xml
+design_name = Block2
+instance = comp, \pin_name5~output , pin_name5~output, Block2, 1
+instance = comp, \F1~input , F1~input, Block2, 1
+instance = comp, \F2~input , F2~input, Block2, 1
+instance = comp, \F3~input , F3~input, Block2, 1
+instance = comp, \M~input , M~input, Block2, 1
+instance = comp, \inst3~0 , inst3~0, Block2, 1

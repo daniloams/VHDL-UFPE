@@ -1,0 +1,8 @@
+|Block2
+pin_name5 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+F2 => inst.IN0
+F3 => inst.IN1
+F1 => inst.IN2
+M => inst2.IN0
+
+
