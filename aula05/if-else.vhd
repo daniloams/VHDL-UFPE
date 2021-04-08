@@ -1,20 +1,21 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity estrutura is
-    port (
+entity ifelse is
+    port (a,b: in std_logic;
+            c: out std_logic);
+end ifelse;
 
-    )
-
-architecture BehaviorOfTest of estrutura is
-    process (variaveis_a_serem_analisadas)
+architecture test of estrutura is
+    process (a,b)
         begin
-            if(condicao1)   then
+            if(a)   then
                 c<='0';
             elsif(condicao2)    then
                 c<='0';
             else
                 c<='1';
-            end if;
-        end process;
+        end if;
+    end process;
+end test; 

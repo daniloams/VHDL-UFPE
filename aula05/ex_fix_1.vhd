@@ -1,4 +1,4 @@
-library library IEEE;
+library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
@@ -10,7 +10,7 @@ end ex_fix_1;
 architecture test of ex_fix_1 is
     begin
         --some local variables
-        procedure (a,b)
+        process (a,b)
             begin
                 if(a='0'and b='0') then
                     c<=0;                
