@@ -1,0 +1,49 @@
+|teste0
+CLOCK_50 => ~NO_FANOUT~
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+LED[0] <= programa_secundario:SOMADOR1.S
+LED[1] <= programa_secundario:SOMADOR1.Cout
+LED[2] <= <GND>
+LED[3] <= <GND>
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+ehkey[0] => programa_secundario:SOMADOR1.A
+ehkey[1] => programa_secundario:SOMADOR1.B
+ehkey[2] => programa_secundario:SOMADOR1.Cin
+ehkey[3] => ~NO_FANOUT~
+ehkey[4] => ~NO_FANOUT~
+ehkey[5] => ~NO_FANOUT~
+ehkey[6] => ~NO_FANOUT~
+ehkey[7] => ~NO_FANOUT~
+ehkey[8] => ~NO_FANOUT~
+ehkey[9] => ~NO_FANOUT~
+dig7seg[0] <= dig7seg[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+dig7seg[1] <= dig7seg[1]~0.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[1] <= d7seg[1]~7.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[2] <= d7seg[2]~6.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[3] <= d7seg[3]~5.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[4] <= d7seg[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[5] <= d7seg[5]~3.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[6] <= d7seg[6]~2.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[7] <= d7seg[7]~1.DB_MAX_OUTPUT_PORT_TYPE
+d7seg[8] <= d7seg[8]~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|teste0|programa_secundario:SOMADOR1
+A => S~0.IN0
+A => Cout~0.IN0
+A => Cout~1.IN0
+B => S~0.IN1
+B => Cout~0.IN1
+B => Cout~3.IN0
+Cin => S~1.IN1
+Cin => Cout~1.IN1
+Cin => Cout~3.IN1
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

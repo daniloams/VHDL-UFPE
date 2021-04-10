@@ -1,0 +1,20 @@
+entity estrutura2 is
+port ( a,b: in bit;
+			c: out bit);
+end entity;
+
+architecture test2 of estrutura2 is
+signal x: bit_vector(1 downto 0);
+begin 
+	x<= a & b;
+	process(a,b)
+		
+		begin 
+		 
+		 case x is
+			when "00" =>  c<=0;
+			when others => c<=1;
+			
+		end case;
+		end process;
+end test2;

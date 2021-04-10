@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity test is
+	ehkey: in std_logic_vector(9 downto 0);
+	
+	LED: out std_logic_vector(7 downto 0);
+		
+end test;
+
+architecture BehaviorOfTest of test is
+signal v_aux: std_logic_vector(3 downto 0);
+begin 
+SOMADOR1: entity work.programa_secundario
+port map(A => ehkey(0), B => ehkey(7), Cin => '0', Cout => v_aux(0), S => LED (0));
+SOMADOR2: entity work.programa_secundario
+port map(A => ehkey(1), B=> ehkey(8), Cin= v_aux(0)>, Cout=>LED (1), S=>LED (2));
+
+end BehaviorOfTest;

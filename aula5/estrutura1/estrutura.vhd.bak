@@ -1,0 +1,22 @@
+entity estrutura is
+
+port ( a,b: in bit;
+			c: out bit);
+			
+end estrutura;
+
+architecture test of estrutura is 
+
+begin
+
+process
+	begin
+		if(a='0') then 
+			c<= '0';
+		elsif(b='0') then 
+			c<='0';
+		else 
+			c<='1';
+	end process
+	
+end test;

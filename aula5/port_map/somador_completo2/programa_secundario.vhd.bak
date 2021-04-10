@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity programa_secundario is
+port(entrada: in  std_logic;
+	  saida:   out std_logic);
+end comportamento;
+ 
+architecture comportamento of programa_secundario is
+begin
+ 
+saida<= not entrada;
+ 
+end comportamento;

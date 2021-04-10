@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Nando/Desktop/Apostila_SD/aulas/aula5/estrutura2/estrutura2.vhd
+source_file = 1, C:/Users/Nando/Desktop/Apostila_SD/aulas/aula5/estrutura2/db/estrutura2.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = estrutura2
+instance = comp, \c~output\, c~output, estrutura2, 1
+instance = comp, \a~input\, a~input, estrutura2, 1
+instance = comp, \b~input\, b~input, estrutura2, 1
+instance = comp, \Mux0~0\, Mux0~0, estrutura2, 1
